@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b7da4' fill-opacity='0.2'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+}
+
+.background {
+    height: 97dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 96%);
+    width: clamp(320px, 90vw, 500px);
+    border: 2px solid hsl(0, 0%, 85%);
+    border-radius: 1rem;
+    padding: clamp(8px, 5%, 32px);
+    text-align: center;
+}
+
+.btn-primary {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f7713;
+    color: #eeeeee;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a51919;
+    color: #eeeeee;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.199);
+}
