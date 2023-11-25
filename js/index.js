@@ -1,17 +1,15 @@
-var count = 0;
-
+let count = 0;
+let countNum = document.getElementById("counter");
+let previousEntry = document.getElementById("previous-entries");
 
 const counterAdd = () => {
-  document.getElementById('previous-num').innerHTML = count;
-  return document.getElementById("counter").innerHTML = ++count;
+  return countNum.innerHTML = ++count;
 }
 
-const counterSub = () => {
-  document.getElementById('previous-num').innerHTML = count;
-  return document.getElementById("counter").innerHTML = --count;
+const counterSave = () => {
+  let preNum = countNum.innerHTML;
+  return previousEntry.innerText += ` ${preNum} - `;
 }
 
 document.getElementById("btn-increase").addEventListener('click', counterAdd);
-document.getElementById("btn-decrease").addEventListener('click', counterSub)
-
-
+document.getElementById("btn-save").addEventListener('click', counterSave)
